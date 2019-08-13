@@ -2,18 +2,22 @@
 <title>Navigating through spaces of possibilites</title>
 <html>This is the leading website for navigating through spaces of possibilites
 </html>
+<head>
+     <link rel="stylesheet" href="css/main.css">
 <h1>Let's start</h1>
 
+   
 <img src="https://www.arborday.org/trees/lifestages/images/figure-life-stages.jpg">
 
-$("#search-criteria").on("keyup", function() {
-    var g = $(this).val().toLowerCase();
-    $(".fbbox .fix label").each(function() {
-        var s = $(this).text().toLowerCase();
-        $(this).closest('.fbbox')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
-    });
-});​
-
+    <h1>Type in problem</h1>
+    <form id="todoForm">
+        <input id="todoInput">
+        <button type="button" onclick="todoList()"">Click Me</button>
+      
+                                                   </form>
+                                                <ol id="todoList">
+                                                                 </ol>
+                                                   <script src="js/main.js"></script>
 <form action="/action_page.php">
   Problem <input type="text" name="fname"><br>
   Last name: <input type="text" name="lname"><br>
